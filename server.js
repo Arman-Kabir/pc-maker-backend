@@ -32,6 +32,13 @@ async function run() {
             res.send(products);
         });
 
+        app.get('/products/:id', async (req, res) => {
+            const id = req.params.id;
+            const product = await productsCollection.findOne({ id: id });
+            // console.log(products);
+            res.send(product);
+        });
+
     } finally {
 
     }
