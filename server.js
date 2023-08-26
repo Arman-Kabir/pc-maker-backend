@@ -3,7 +3,7 @@ import { MongoClient, ServerApiVersion } from 'mongodb';
 import 'dotenv/config';
 import cors from 'cors';
 // console.log(process.env) // remove this after you've confirmed it is working
-const port = 3001;
+const port = 5002;
 const app = express();
 app.use(cors());
 //parser
